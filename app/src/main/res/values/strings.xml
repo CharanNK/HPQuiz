@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Harry Potter Quiz</string>
+    <string name="playOpt">PLAY GAME</string>
+    <string name="leaderboardOpt">LEADERBOARD</string>
+    <string name="optionsOpt">OPTIONS</string>
+    <string name="submitquesOpt">SUMBIT QUESTION</string>
+    <string name="gameModeSelect">Choose Game Mode</string>
+    <string name="highScoreText">HIGHSCORE</string>
+</resources>

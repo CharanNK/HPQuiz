@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameplay_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/potterText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/harry_potter_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding40"
+            android:paddingRight="@dimen/padding40"
+            android:weightSum="8">
+
+            <Button
+                android:id="@+id/playOpt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/category_select_buttons"
+                android:drawableRight="@drawable/ic_play_game_icon"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:shadowColor="@color/buttonStroke"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="10"
+                android:text="@string/playOpt"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:id="@+id/leaderboardOpt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/category_select_buttons"
+                android:drawableRight="@drawable/ic_leaderboard_icon"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:shadowColor="@color/buttonStroke"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="10"
+                android:text="@string/leaderboardOpt"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:id="@+id/settingsOpt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/category_select_buttons"
+                android:drawableRight="@drawable/ic_settings_icon"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:shadowColor="@color/buttonStroke"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="10"
+                android:text="@string/optionsOpt"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:id="@+id/submitquesOpt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/category_select_buttons"
+                android:drawableRight="@drawable/ic_submitques_icon"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:shadowColor="@color/buttonStroke"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="10"
+                android:text="@string/submitquesOpt"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+                <ImageView
+                    android:id="@+id/googleGameOption"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/category_select_buttons"
+                    android:padding="@dimen/padding10"
+                    android:shadowColor="@color/buttonStroke"
+                    android:shadowDx="3"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_gamepad_icon"
+                    android:focusableInTouchMode="true"
+                    android:shadowDy="3"
+                    android:shadowRadius="10">
+                </ImageView>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:id="@+id/rateButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/category_select_buttons"
+                    android:padding="@dimen/padding10"
+                    android:shadowColor="@color/buttonStroke"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:src="@drawable/ic_rate_icon"
+                    android:shadowRadius="10">
+                </ImageView>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:id="@+id/shareButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/category_select_buttons"
+                    android:padding="@dimen/padding10"
+                    android:shadowColor="@color/buttonStroke"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:src="@drawable/ic_share_icon"
+                    android:shadowRadius="10">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

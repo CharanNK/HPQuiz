@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameplay_backblur"
+    tools:ignore="missingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/harry_life_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/harry_life_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/harry_life_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/coins_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="1000"
+                    android:textColor="@color/rusticColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="1.4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="Question"
+                    android:textColor="@color/rusticColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="1/40"
+                    android:textColor="@color/rusticColor"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="Score"
+                    android:textColor="@color/rusticColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="@color/rusticColor"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questions_textview"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoSizeMaxTextSize="32sp"
+                    android:autoSizeMinTextSize="18sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding20"
+                    android:paddingRight="@dimen/padding20"
+                    android:text="In the second task of The Triwizard Tournament, how many points was Fleur awarded after failing to reach her hostage in time?"
+                    android:textColor="@color/rusticColor"
+                    android:layout_weight="2"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="1.2"
+            android:layout_marginLeft="@dimen/padding20"
+            android:layout_marginRight="@dimen/padding20"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="wrap_content"
+                android:text="50:50"
+                android:layout_weight="0.3"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/rusticColor"
+                android:background="@drawable/fifty_button"/>
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="@dimen/dimen0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/hint_icon_bg"/>
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_marginRight="60dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/option1button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="1.4"
+                android:background="@drawable/option_button_default"
+                android:drawableRight="@drawable/option_smiley_default"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="He wanted to protect her from Voldemort"
+                android:textAllCaps="false"
+                android:textColor="@color/rusticColor"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"></Button>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/option2button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="1.4"
+                android:background="@drawable/option_button_default"
+                android:drawableRight="@drawable/option_smiley_default"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="In the Gryffindor common room"
+                android:textAllCaps="false"
+                android:textColor="@color/rusticColor"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"></Button>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/option3button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="1.4"
+                android:background="@drawable/option_button_default"
+                android:drawableRight="@drawable/option_smiley_default"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="To make him invulnerable"
+                android:textAllCaps="false"
+                android:textColor="@color/rusticColor"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"></Button>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/option4button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen0"
+                android:layout_weight="1.4"
+                android:background="@drawable/option_button_default"
+                android:drawableRight="@drawable/option_smiley_default"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="Jelly Babies"
+                android:textAllCaps="false"
+                android:textColor="@color/rusticColor"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"></Button>
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

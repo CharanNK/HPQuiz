@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/gameplay_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="4.4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:shadowColor="@color/buttonStroke"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:text="@string/gameModeSelect"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.2" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/classic_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_marginLeft="@dimen/padding30"
+            android:layout_marginRight="@dimen/padding30"
+            android:layout_weight="1.1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/padding10"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_select_buttons"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/classic_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:shadowColor="@color/buttonStroke"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="10"
+                    android:text="CLASSIC"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding10"
+                        android:text="Answer questions according to the book series. No timer applied."
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen0"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/highScoreText"
+                            android:textColor="@color/colorWhite" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen0"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="25"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.2" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/arcade_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_marginLeft="@dimen/padding30"
+            android:layout_marginRight="@dimen/padding30"
+            android:layout_weight="1.1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/padding10"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_select_buttons"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/arcade_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:shadowColor="@color/buttonStroke"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="10"
+                    android:text="ARCADE"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding10"
+                        android:text="You have 3 lives to answer as many questions as possible."
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen0"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/highScoreText"
+                            android:textColor="@color/colorWhite" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen0"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="25"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_weight="0.2" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/survival_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:layout_marginLeft="@dimen/padding30"
+            android:layout_marginRight="@dimen/padding30"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/padding10"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/category_select_buttons"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/survival_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:shadowColor="@color/buttonStroke"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="10"
+                    android:text="SURVIVAL"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen0"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding10"
+                        android:text="Answer random questions within time limit."
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen0"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="@string/highScoreText"
+                            android:textColor="@color/colorWhite" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen0"
+                            android:layout_weight="2"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="25"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
